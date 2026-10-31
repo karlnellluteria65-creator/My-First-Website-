@@ -1,1 +1,238 @@
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #080914;
+    color: white;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: #101120;
+    border-bottom: 1px solid #292943;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.logo span,
+h1 span,
+h2 span {
+    color: #a855f7;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #a855f7;
+}
+
+/* HERO SECTION */
+
+.hero {
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+    padding: 60px 8%;
+    background:
+        linear-gradient(90deg, #080914 20%, #080914bb 65%, #08091488),
+        url("https://images.unsplash.com/photo-1542751371-adc38448a05e?w=1400")
+        center/cover;
+}
+
+.hero-content {
+    max-width: 550px;
+}
+
+.tag {
+    color: #a855f7;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+}
+
+h1 {
+    font-size: clamp(42px, 9vw, 75px);
+    line-height: 1.05;
+    margin-bottom: 20px;
+}
+
+.description {
+    color: #c4c4d4;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 25px;
+    background: #9333ea;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.btn:hover {
+    background: #7e22ce;
+}
+
+/* GAMES SECTION */
+
+.games {
+    padding: 75px 8%;
+    text-align: center;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+.game-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.game-card {
+    background: #151629;
+    border: 1px solid #292943;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: left;
+    transition: 0.3s;
+}
+
+.game-card:hover {
+    transform: translateY(-7px);
+    border-color: #a855f7;
+}
+
+.game-image {
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+}
+
+.game-one {
+    background-image: url("https://images.unsplash.com/photo-1542751371-adc38448a05e?w=700");
+}
+
+.game-two {
+    background-image: url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=700");
+}
+
+.game-three {
+    background-image: url("https://images.unsplash.com/photo-1511512578047-dfb367046420?w=700");
+}
+
+.game-info {
+    padding: 20px;
+}
+
+.game-info h3 {
+    margin-bottom: 9px;
+}
+
+.game-info p {
+    color: #aaaabd;
+    font-size: 13px;
+    margin-bottom: 18px;
+}
+
+.game-info a {
+    color: #c084fc;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* ABOUT SECTION */
+
+.about {
+    background: #111224;
+    padding: 65px 8%;
+    text-align: center;
+}
+
+.about > p:last-child {
+    color: #c4c4d4;
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 25px 10px;
+    text-align: center;
+    color: #88889e;
+    font-size: 12px;
+    line-height: 2;
+}
+
+/* MOBILE DESIGN */
+
+@media (max-width: 700px) {
+
+    header {
+        padding: 18px 5%;
+        flex-direction: column;
+        gap: 17px;
+    }
+
+    nav {
+        gap: 18px;
+    }
+
+    .hero {
+        min-height: 420px;
+        padding: 45px 7%;
+    }
+
+    .games {
+        padding: 55px 6%;
+    }
+
+    .game-container {
+        grid-template-columns: 1fr;
+    }
+
+    .game-image {
+        height: 200px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+}
+
