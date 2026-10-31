@@ -236,3 +236,46 @@ footer {
     }
 }
 
+/* GAME SEARCH AND FILTER */
+
+.game-controls {
+    margin-bottom: 30px;
+}
+
+#gameSearch {
+    width: 100%;
+    max-width: 450px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #9333ea;
+    border-radius: 8px;
+    background: #151629;
+    color: white;
+    font-size: 15px;
+    outline: none;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.category-btn {
+    padding: 11px 20px;
+    border: 1px solid #9333ea;
+    background: #151629;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.category-btn.active,
+.category-btn:hover {
+    background: #9333ea;
+}
+
+.game-card.hidden {
+    display: none;
+}
