@@ -1,11 +1,91 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXUS GAMING</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello World!</h1>
-    <p>Welcome to my first website.</p>
+
+    <header>
+        <div class="logo">NEXUS<span>GAMING</span></div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#games">Games</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="tag">WELCOME TO THE GAMING WORLD</p>
+
+            <h1>LEVEL UP<br>
+            YOUR <span>GAME.</span></h1>
+
+            <p class="description">
+                Discover exciting games, explore new worlds,
+                and find your next gaming adventure.
+            </p>
+
+            <a href="#games" class="btn">EXPLORE GAMES</a>
+        </div>
+    </section>
+
+    <section class="games" id="games">
+        <p class="tag">YOUR NEXT ADVENTURE</p>
+        <h2>FEATURED <span>GAMES</span></h2>
+
+        <div class="game-container">
+
+            <div class="game-card">
+                <div class="game-image game-one"></div>
+                <div class="game-info">
+                    <h3>Cyber Warrior</h3>
+                    <p>Action • Adventure</p>
+                    <a href="#about">Discover More →</a>
+                </div>
+            </div>
+
+            <div class="game-card">
+                <div class="game-image game-two"></div>
+                <div class="game-info">
+                    <h3>Space Legends</h3>
+                    <p>Sci-Fi • Exploration</p>
+                    <a href="#about">Discover More →</a>
+                </div>
+            </div>
+
+            <div class="game-card">
+                <div class="game-image game-three"></div>
+                <div class="game-info">
+                    <h3>Dark Kingdom</h3>
+                    <p>Fantasy • RPG</p>
+                    <a href="#about">Discover More →</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <p class="tag">WHO WE ARE</p>
+        <h2>ABOUT <span>NEXUS</span></h2>
+        <p>
+            NEXUS GAMING is a gaming website made
+            for players who love discovering new
+            adventures and exploring gaming worlds.
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2026 NEXUS GAMING. All Rights Reserved.</p>
+        <p>Created by a beginner web developer.</p>
+    </footer>
+
 </body>
 </html>
+q
