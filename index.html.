@@ -39,9 +39,26 @@
         <p class="tag">YOUR NEXT ADVENTURE</p>
         <h2>FEATURED <span>GAMES</span></h2>
 
+<div class="game-controls">
+
+    <input
+        type="text"
+        id="gameSearch"
+        placeholder="Search games..."
+    >
+
+    <div class="categories">
+        <button class="category-btn active" data-category="all">All</button>
+        <button class="category-btn" data-category="action">Action</button>
+        <button class="category-btn" data-category="sci-fi">Sci-Fi</button>
+        <button class="category-btn" data-category="fantasy">Fantasy</button>
+    </div>
+
+</div>
+
         <div class="game-container">
 
-            <div class="game-card">
+            <div class="game-card" data-category="action">
                 <div class="game-image game-one"></div>
                 <div class="game-info">
                     <h3>Cyber Warrior</h3>
@@ -50,7 +67,7 @@
                 </div>
             </div>
 
-            <div class="game-card">
+            <div class="game-card" data-category="sci-fi">
                 <div class="game-image game-two"></div>
                 <div class="game-info">
                     <h3>Space Legends</h3>
@@ -59,7 +76,7 @@
                 </div>
             </div>
 
-            <div class="game-card">
+            <div class="game-card" data-category="fantasy">
                 <div class="game-image game-three"></div>
                 <div class="game-info">
                     <h3>Dark Kingdom</h3>
