@@ -1,0 +1,52 @@
+const searchInput = document.getElementById("gameSearch");
+
+const categoryButtons = document.querySelectorAll(".category-btn");
+
+const gameCards = document.querySelectorAll(".game-card");
+
+let selectedCategory = "all";
+
+function filterGames() {
+
+    const searchText = searchInput.value.toLowerCase();
+
+    gameCards.forEach(card => {
+
+        const gameName = card.querySelector("h3").textContent.toLowerCase();
+
+        const category = card.dataset.category;
+
+        const matchesSearch = gameName.includes(searchText);
+
+        const matchesCategory =
+            selectedCategory === "all" ||
+            category === selectedCategory;
+
+        if (matchesSearch && matchesCategory) {
+            card.classList.remove("hidden");
+        } else {
+            card.classList.add("hidden");
+        }
+
+    });
+}
+
+searchInput.addEventListener("input", filterGames);
+
+categoryButtons.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        categoryButtons.forEach(btn => {
+            btn.classList.remove("active");
+        });
+
+        button.classList.add("active");
+
+        selectedCategory = button.dataset.category;
+
+        filterGames();
+
+    });
+
+});
